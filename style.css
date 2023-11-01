@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:ital,wght@0,500;0,600;0,800;1,400;1,500&display=swap');
+
+/*
+font-family: "Oswald", sans-serif;
+font-family: "Poppins", sans-serif;
+*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(206, 201, 201);
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(img/slider1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  min-height: 90vh;
+  padding: 50px 0 0 0; 
+}
+.header-content {
+  display: flex;
+  
+}
+
+.header-txt {
+  width: 50%;
+}
+.header-txt h1 {
+  font-size: 70px;
+  line-height: 1;
+  color: white;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 15px;
+}
+
+.header-txt p {
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 90;
+}
+
+.btn-1 {
+  display: inline-block;
+  padding: 11px 25px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+
+  
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  
+}
+
+.logo {
+  font-size: 25px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: "Oswald", sans-serif;
+  
+}
+
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+  
+}
+.menu .navbar ul li a {
+  font-size: 18px;
+  padding: 20px;
+  color: white;
+  display: block;
+  font-weight: 600;
+}
+.menu .navbar ul li a:hover {
+  color: gray;
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icon {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+.submenu  {
+  position: relative;
+}
+
+.submenu #carrito {
+  display: none;
+  
+}
+
+.submenu:hover #carrito {
+  display: block;
+  position: absolute;
+  right: 0;
+  backdrop-filter: blur (10px);
+  top: 100%;
+  z-index: 1;
+  background-color: #918d8d17;
+  padding: 20px;
+  min-height: 400px;
+}
+
+table {
+  width: 100%;
+}
+
+th, td {
+  color: white;
+}
+
+.borrar {
+  background-color: black;
+  border-radius: 50%;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.information {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-1 {
+  flex-basis: calc(33.3% - 20px);
+  padding: 10px 15px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  height: 170px;
+
+}
+
+.b1 {
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(img/bod.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 50px 0 0 0; ;
+}
+
+.b2 {
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(img/instalaciones.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 50px 0 0 0; ;
+}
+
+.b3 {
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(img/enologo-saint-victoria.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 50px 0 0 0; ;
+}
+
+.info-txt {
+  flex-basis: 50%;
+}
+
+.info-txt h3 {
+  color: white;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+.info-txt a {
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  padding: 3px 6px;
+}
+
+.product {
+  padding: 0 0 50px 0;
+  text-align: center;
+}
+
+h2 {
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  align-items: center;
+ 
+}
+
+.product-content {
+  margin-top: 55px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, mimax(250px, ifr));
+  gap: 20px;
+}
+
+
+
+
+
+footer {
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(img/posible-footer.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  min-height: 30vh;
+  padding: 50px 0 0 0; 
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
