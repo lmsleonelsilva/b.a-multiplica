@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saint Victoria | W I N E S</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;1,400;1,500&display=swap');
+
+        /*
+            font-family: "Libre Baskerville", sans-serif;
+            font-family: "Playfair Display", sans-serif;
+        */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body {
+            font-family: "Libre Baskerville", sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            min-height: 80vh;
+            background-color: white;
+            padding: 70px 0;
+        }
+        .menu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-size: 15px;
+            color: black;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+        .menu .navbar ul li{
+            position: relative;
+            float: left;
+        }
+        .menu .navbar ul li a {
+            font-size: 15px;
+            padding: 20PX;
+            color: white;
+            display: block;
+            font-family: "Playfair Display", sans-serif;
+            font-weight: 600;
+        }
+        .menu .navbar ul li a:hover {
+            color: gray;
+        }
+        #menu {
+            display: none;
+        }
+        .menu-icono {
+            width: 25px;
+        }
+        .menu label{
+            cursor: pointer;
+            display: none;
+        }
+        .submenu {
+            position: relative;
+        }
+        .submenu #carrito {
+            display: none;
+        }
+        .submenu:hover #carrito {
+            display: block;
+            position: absolute;
+            right: 0;
+            backdrop-filter: blur (50px);
+            top: 100%;
+            z-index: 1;
+            background-color: #33333317;
+            padding: 20px;
+            min-height: 400px;
+        }
+        table {
+            width: 100%;
+        }
+        th, td {
+            color: white;
+        }
+        .borrar {
+            background-color: black;
+            border-radius: 50%;
+            padding: 5px 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: 800;
+            cursor: pointer;
+        }
+        .header {
+            background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(img/enologo-header-original.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            min-height: 80vh;
+            padding: 50px 0 0 0;
+        } 
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex: 1;
+            padding: 0 200px;
+        }
+        .finca {
+            padding: 100px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .imagen-1 {
+            flex-basis: calc(33.3% - 20px);
+            padding: 10px 15px;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            height: 300px;
+        }
+        .b1 {
+            background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(img/enologo-1.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            padding: 80px 0 0 0; ; 
+        }
+        .b1:hover {
+            transform: scale(1.1);
+        }
+
+        .b2 {
+            background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(img/enologo-header.jpeg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            padding: 80px 0 0 0; ; 
+        }
+        .b2:hover {
+            transform: scale(1.1);
+        }
+
+        .b3 {
+            background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(img/enologo-3.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            padding: 80px 0 0 0; 
+        }
+        .b3:hover {
+            transform: scale(1.1);
+        }
+        .imagen-txt {
+            flex-basis: 50%;
+        }
+        .imagen-txt h3 {
+            color: white;
+            font-size: 20px;
+            font-family: "Playfair Display", sans-serif;
+            text-transform: uppercase;
+        }
+        .main {
+            display: flex;
+
+        }
+        .enologo-txt  p {
+            flex-basis: 90px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            line-height: 2.5;
+            padding-bottom: 100px;
+        }
+        h4 {
+            color: black;
+            font-family: "Playfair Display", sans-serif;
+            font-size: 80px;
+            text-align: center;
+            align-items: center;
+            text-transform: uppercase;
+            line-height: 3;
+        }
+        footer {
+            background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(img/posible-footer.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            min-height: 30vh;
+            padding: 50px 0 0 0; 
+            font-family: "Libre Baskerville", sans-serif;
+            color: white;
+        }
+
+        .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .footer-content p {
+            max-width: 500px;
+            margin: 10px auto;
+            line-height: 28px;
+            font-size: 12px;
+        }
+
+        .socials {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0 ;
+        }
+  
+        .socials a img {
+            height: 40px;
+            display: flex;
+        }
+        .socials a img:hover {
+            color: gray;
+        }
+        .socials li {
+            margin: 0 10px;
+        }
+
+        .footer-bottom {
+            background-color: black;
+            width: 100vw;
+            padding: 5px 0;
+            text-align: center;
+        }
+
+        .footer-bottom a {
+            font-size: 14px;
+            word-spacing: 2px;
+            font-weight: 200;
+        }
+
+        .footer-bottom span {
+            text-transform: uppercase;
+            opacity: .4;
+            font-weight: 200;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <img id="logo" src="img/logo-saint-victoria-since2022.png" alt="">
+            
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="img/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="vinos.html">VINOS</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="img/car-blanco.svg" id="img-carrito" alt="carito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+            
+    </header>
+
+    <section class="finca container">
+        <div class="imagen-1 b1">
+            
+            <div class="imagen-txt">
+                <h3>pasión</h3>
+            </div>
+        </div>
+        <div class="imagen-1 b2">
+            
+            <div class="imagen-txt">
+                <h3>Orgullo</h3>
+            </div>
+        </div>
+        <div class="imagen-1 b3"> 
+            
+            <div class="imagen-txt">
+                <h3>Prestigio</h3>
+            </div>
+        </div>
+    </section>
+    <main class="enologo container">
+        <div class="enologo content">
+            <h4>enologo</h4>
+            
+            <div class="enologo-txt">
+                <p>
+                    Juan Pablo Murgia, miembro de Alejandro Bulgheroni Family Vineyards fue nominado como “Enólogo del Año” por la revista norteamericana especializada Wine Enthusiast, a través de sus premios Wine Star Awards 2023. Este premio reconoce y celebra la innovación de las personas y empresas que han contribuido significativamente al éxito del mundo del vino y las bebidas alcohólicas. En el 2022 se incorporó a Bodegas Saint Victoria para trabajar en el área de enología, donde realizó elaboraciones en distintas zonas vitivinícolas del país. Durante este tiempo, se hizo cargo del gerenciamiento de la bodega, cargo que ocupa en la actualidad.     
+                </p>
+            </div>
+            
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <img src="img/logo-saint-victoria-since2022.png" alt="">
+            <p>Gracias por visitarnos, tambien nos podes encontrar en nuestras redes</p>
+            <ul class="socials">
+                <li><a href="https://instagram.com/leosilvactc?igshid=OGQ5ZDc2ODk2ZA=="><img src="img/logo-insta.png" alt="instagram"></a></li>
+                <li><a href="https://www.linkedin.com/in/leonel-marcelo-silva-9392391a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="img/logo-linkedin.png" alt="linkedin"></a></li>
+                
+            </ul>
+            <div class="footer-bottom">
+                <p>copyright &copy;2023 Saint Victoria by <span>leonelmsilva</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -10,25 +10,26 @@
 
     <header class="header">
         <div class="menu container">
-            <a href="#" class="logo">Saint Victoria</a>
+            <img id="logo" src="img/Untitled_design-removebg-preview.png" alt="">
+            
             <input type="checkbox" id="menu">
             <label for="menu">
-                <img src="" class="menu-icono" alt="menu">
+                <img src="img/menu.png" class="menu-icono" alt="menu">
             </label>
             <nav class="navbar">
                 <ul>
-                    <li><a href="#">INICIO</a></li>
-                    <li><a href="#">NOSOTROS</a></li>
-                    <li><a href="#">PRODUCTOS</a></li>
-                    <li><a href="#">CONTACTO</a></li>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="vinos.html">VINOS</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
                 </ul>
             </nav>
             <div>
                 <ul>
                     <li class="submenu">
-                        <img id="img-carrito" src="img/car.svg" alt="car">
+                        <img src="img/car.svg" id="img-carrito" alt="carrito">
                         <div id="carrito">
-                            <table id="lista">
+                            <table id="lista-carrito">
                                 <thead>
                                     <tr>
                                         <th>Imagen</th>
@@ -38,7 +39,7 @@
                                 </thead>
                                 <tbody></tbody>
                             </table>
-                            <a href="#" id="vaciar-carrito">Vaciar Carrito</a>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
                         </div>
                     </li>
                 </ul>
@@ -52,7 +53,7 @@
               <h1>Bienvenidos a Bodegas Saint Victoria</h1>
                 <p>Somos una Bodega que se proyecta con sus valores de tradición, calidad, prestigio, innovación y contemporaneidad en la vitivinicultura argentina.
                 </p>
-                <a href="#" class="btn-1">Leer mas</a>
+                <a href="nosotros.html" class="btn-1">Leer mas</a>
                 
             </div>
         </div>
@@ -65,8 +66,8 @@
                 <img src="" alt="">
             </div>
             <div class="info-txt">
-                <h3>Bodegas</h3>
-                <a href="#" class="btn-2">Leer mas</a>
+                <h3>Fincas</h3>
+                <a href="finca.html" class="btn-2">Leer mas</a>
             </div>
         </div>
         <div class="info-1 b2">
@@ -74,34 +75,37 @@
                 <img src="" alt="">
             </div>
             <div class="info-txt">
-                <h3>Istalaciones</h3>
-                <a href="#" class="btn-2">Leer mas</a>
+                <h3>Instalaciones</h3>
+                <a href="instalaciones.html" class="btn-2">Leer mas</a>
             </div>
         </div>
-        <div class="info-1 b3">
+        <div class="info-1 b3"> 
             <div class="info-img">
                 <img src="" alt="">
             </div>
             <div class="info-txt">
                 <h3>Enologo</h3>
-                <a href="#" class="btn-2">Leer mas</a>
+                <a href="enologo.html" class="btn-2">Leer mas</a>
             </div>
         </div>
 
     </section>
 
-    <main class="products container">
+
+
+
+    <main class="products container" id="lista-1">
 
         <h2>PRODUCTOS</h2>
 
         <div class="product-content">
-            <div class="product-txt">
+          
                 
                 
 
-            <div class="product-content">
+            <div class="product">
                 <div class="box">
-                    <img src="img/botella-para-imagen-comprar.jpg" alt="">
+                    <img src="img/botella-para-imagen-comprar-removebg-preview.png" alt="">
             
                     <div class="product-txt">
                         <h3>1 MONTH</h3>
@@ -114,13 +118,13 @@
             </div>
             
 
-            <div class="product-content">
+            <div class="product">
                 <div class="box">
-                    <img src="img/botella-para-imagen-comprar.jpg" alt="">
+                    <img src="img/botella-para-imagen-comprar-removebg-preview.png" alt="">
             
                     <div class="product-txt">
                         <h3>2 MONTH</h3>
-                        <p>Malbec</p>
+                        <p>Cabernet Sauvignon</p>
                         <p class="precio">$3000</p>
                         <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
                     </div>
@@ -128,13 +132,13 @@
 
             </div>
 
-            <div class="product-content">
+            <div class="product">
                 <div class="box">
-                    <img src="img/botella-para-imagen-comprar.jpg" alt="">
+                    <img src="img/botella-para-imagen-comprar-removebg-preview.png" alt="">
             
                     <div class="product-txt">
                         <h3>3 MONTH</h3>
-                        <p>Malbec</p>
+                        <p>Red Blend</p>
                         <p class="precio">$3000</p>
                         <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
                     </div>
@@ -142,9 +146,9 @@
 
             </div>
 
-            <div class="product-content">
+            <div class="product">
                 <div class="box">
-                    <img src="img/botella-para-imagen-comprar.jpg" alt="">
+                    <img src="img/botella-para-imagen-comprar-removebg-preview.png" alt="">
             
                     <div class="product-txt">
                         <h3>4 MONTH</h3>
@@ -156,13 +160,13 @@
 
             </div>
 
-            <div class="product-content">
+            <div class="product">
                 <div class="box">
-                    <img src="img/botella-para-imagen-comprar.jpg" alt="">
+                    <img src="img/botella-para-imagen-comprar-removebg-preview.png" alt="">
             
                     <div class="product-txt">
                         <h3>5 MONTH</h3>
-                        <p>Malbec</p>
+                        <p>Cabernet Sauvignon</p>
                         <p class="precio">$3000</p>
                         <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al carrito</a>
                     </div>
@@ -171,13 +175,13 @@
             </div>
 
 
-            <div class="product-content">
+            <div class="product">
                 <div class="box">
-                    <img src="img/botella-para-imagen-comprar.jpg" alt="">
+                    <img src="img/botella-para-imagen-comprar-removebg-preview.png" alt="">
             
                     <div class="product-txt">
                         <h3>6 MONTH</h3>
-                        <p>Malbec</p>
+                        <p>Red Blend</p>
                         <p class="precio">$3000</p>
                         <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar al carrito</a>
                     </div>
@@ -185,9 +189,9 @@
 
             </div>
 
-            <div class="product-content">
+            <div class="product">
                 <div class="box">
-                    <img src="img/botella-para-imagen-comprar.jpg" alt="">
+                    <img src="img/botella-para-imagen-comprar-removebg-preview.png" alt="">
             
                     <div class="product-txt">
                         <h3>7 MONTH</h3>
@@ -199,13 +203,13 @@
 
             </div>
 
-            <div class="product-content">
+            <div class="product">
                 <div class="box">
-                    <img src="img/botella-para-imagen-comprar.jpg" alt="">
+                    <img src="img/botella-para-imagen-comprar-removebg-preview.png" alt="">
             
                     <div class="product-txt">
                         <h3>8 MONTH</h3>
-                        <p>Malbec</p>
+                        <p>Cabernet Sauvignon</p>
                         <p class="precio">$3000</p>
                         <a href="#" class="agregar-carrito btn-2" data-id="8">Agregar al carrito</a>
                     </div>
@@ -213,13 +217,13 @@
 
             </div>
 
-            <div class="product-content">
+            <div class="product">
                 <div class="box">
-                    <img src="img/botella-para-imagen-comprar.jpg" alt="">
+                    <img src="img/botella-para-imagen-comprar-removebg-preview.png" alt="">
             
                     <div class="product-txt">
                         <h3>9 MONTH</h3>
-                        <p>Malbec</p>
+                        <p>Red Blend</p>
                         <p class="precio">$3000</p>
                         <a href="#" class="agregar-carrito btn-2" data-id="9">Agregar al carrito</a>
                     </div>
@@ -227,9 +231,9 @@
 
             </div>
 
-            <div class="product-content">
+            <div class="product">
                 <div class="box">
-                    <img src="img/botella-para-imagen-comprar.jpg" alt="">
+                    <img src="img/botella-para-imagen-comprar-removebg-preview.png" alt="">
             
                     <div class="product-txt">
                         <h3>10 MONTH</h3>
@@ -241,13 +245,13 @@
 
             </div>
 
-            <div class="product-content">
+            <div class="product">
                 <div class="box">
-                    <img src="img/botella-para-imagen-comprar.jpg" alt="">
+                    <img src="img/botella-para-imagen-comprar-removebg-preview.png" alt="">
             
                     <div class="product-txt">
                         <h3>11 MONTH</h3>
-                        <p>Malbec</p>
+                        <p>Cabernet Sauvignon</p>
                         <p class="precio">$3000</p>
                         <a href="#" class="agregar-carrito btn-2" data-id="11">Agregar al carrito</a>
                     </div>
@@ -255,35 +259,48 @@
 
             </div>
 
-            <div class="product-content">
+            <div class="product">
                 <div class="box">
-                    <img src="img/botella-para-imagen-comprar.jpg" alt="">
+                    <img src="img/botella-para-imagen-comprar-removebg-preview.png" alt="">
             
                     <div class="product-txt">
                         <h3>12 MONTH</h3>
-                        <p>Malbec</p>
+                        <p>Red Blend</p>
                         <p class="precio">$3000</p>
                         <a href="#" class="agregar-carrito btn-2" data-id="12">Agregar al carrito</a>
                     </div>
                 </div>
 
             </div>
-        <div class="btn-2" id="load-more">Cargar mas</div>
+        
     </main>
 
-    <section class="testimonial container">
-        <span>testimoniales</span>
-        <h2>Que opinan nuestros clientes</h2>
-        <div class="testimonial-content">
-            <div class="testimonial-1">
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                     Iste reiciendis ducimus dolorum cum? Nostrum, ducimus, 
-                     nihil recusandae similique tempore iure modi minus impedit debitis mollitia
-                      temporibus dolores. Nulla, quisquam veniam.
-                </p>
-                <img src="" alt="">
-                <h4>lorem impsum</h4>
+    <section class="tips container">
+        <h4>Algunos TIP'S</h4>
+        <div class="tips-1">
+            <div class="tip-1">
+                  <img src="img/tip-corcho.jpg" alt="">
+                  <h5>El Corcho</h5>
+                  <p>La función del corcho es favorecer la crianza de los vinos y protegerlos hasta que se sirvan.
+                    Un buen corcho debe ser sólido y sin poros en las superficies lisas.
+                    Es importante que el vino esté en contacto con el corcho, por lo que la botella tendrá que guardarse en posición horizontal.
+                    Así se fomenta su impermeabilización, de lo contrario se crearían fugas de vino o entrada de oxígeno que estropearía su crianza</p>
+            </div>
+
+        </div>
+        <div class="tips-1">
+            <div class="tip-1">
+                  <img src="img/tip-la-guarda.jpg" alt="">
+                  <h5>La Guarda</h5>
+                  <p>Se aconseja mantener los vinos a una temperatura de alrededor de 15ºC. evitando fluctuaciones drásticas. La oscuridad es un factor funadamental, ya que la luz envejece los vinos prematuramente. Además debe tener una humedad moderada (70%) para evitar que el corcho se reseque o agriete. Si sucede esto el vino filtrará hacia el exterior y penetrará oxígeno que lo arruinará. Se calcula que a 20ºC se pierden 3 cm3 de vino cada 10 años.</p>
+            </div>
+
+        </div>
+        <div class="tips-1">
+            <div class="tip-1">
+                  <img src="img/tip-barrica.jpg" alt="">
+                  <h5>La Barrica</h5>
+                  <p>Una barrica es un recipiente de madera utilizado para la crianza de vino. La barrica oxigena el vino lentamente (durante períodos de hasta 21 meses) y le aporta textura y aroma para suavizar su sabor. Suelen tener una capacidad de 220 litros. Entre los diferentes tipos de madera, la que mejor cumple estos requisitos es el roble y dentro de sus variedades se destacan el francés y el americano, aunque en la actualidad muchas otras denominaciones de roble están consiguiendo estupendos resultados.</p>
             </div>
 
         </div>
@@ -291,11 +308,15 @@
 
     <footer class="footer">
         <div class="footer-content container">
-            <div class="link">
-                <ul>
-                    <li><a href="">Instagram</a></li>
-                    <li><a href="">Linkedin</a></li>
-                </ul>
+            <img src="img/logo-saint-victoria-since2022.png" alt="">
+            <p>Gracias por visitarnos, tambien nos podes encontrar en nuestras redes</p>
+            <ul class="socials">
+                <li><a href="https://instagram.com/leosilvactc?igshid=OGQ5ZDc2ODk2ZA=="><img src="img/logo-insta.png" alt="instagram"></a></li>
+                <li><a href="https://www.linkedin.com/in/leonel-marcelo-silva-9392391a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="img/logo-linkedin.png" alt="linkedin"></a></li>
+                
+            </ul>
+            <div class="footer-bottom">
+                <p>copyright &copy;2023 Saint Victoria by <span>leonelmsilva</span></p>
             </div>
         </div>
     </footer>

@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:ital,wght@0,500;0,600;0,800;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;1,400;1,500&display=swap');
 
 /*
-font-family: "Oswald", sans-serif;
-font-family: "Poppins", sans-serif;
+font-family: "Libre Baskerville", sans-serif;
+font-family: "Playfair Display", sans-serif;
 */
 
 
@@ -15,64 +15,14 @@ font-family: "Poppins", sans-serif;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: rgb(206, 201, 201);
+  font-family: "Libre Baskerville", sans-serif;
+  background-color: rgba(219, 219, 219, 0.719);
 }
 
 img {
   max-width: 100%;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.header {
-  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(img/slider1.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  min-height: 90vh;
-  padding: 50px 0 0 0; 
-}
-.header-content {
-  display: flex;
-  
-}
-
-.header-txt {
-  width: 50%;
-}
-.header-txt h1 {
-  font-size: 70px;
-  line-height: 1;
-  color: white;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
-  margin-bottom: 15px;
-}
-
-.header-txt p {
-  font-size: 20px;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 90;
-}
-
-.btn-1 {
-  display: inline-block;
-  padding: 11px 25px;
-  background-color: white;
-  color: black;
-  border-radius: 5px;
-}
-
-
-  
 .menu {
   position: absolute;
   top: 0;
@@ -86,11 +36,8 @@ img {
 }
 
 .logo {
-  font-size: 25px;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 800;
-  font-family: "Oswald", sans-serif;
+  left: 0;
+  height: 40px;
   
 }
 
@@ -100,14 +47,15 @@ img {
   
 }
 .menu .navbar ul li a {
-  font-size: 18px;
+  font-size: 15px;
   padding: 20px;
-  color: white;
+  color: black;
   display: block;
   font-weight: 600;
+  font-family: "Playfair Display", sans-serif;
 }
 .menu .navbar ul li a:hover {
-  color: gray;
+  color: white;
 }
 
 #menu {
@@ -129,8 +77,10 @@ img {
 
 .submenu #carrito {
   display: none;
-  
+
 }
+
+
 
 .submenu:hover #carrito {
   display: block;
@@ -139,10 +89,13 @@ img {
   backdrop-filter: blur (10px);
   top: 100%;
   z-index: 1;
-  background-color: #918d8d17;
+  background-color: #33333317;
   padding: 20px;
-  min-height: 400px;
+  min-width: 400px;
 }
+
+
+
 
 table {
   width: 100%;
@@ -162,6 +115,65 @@ th, td {
   cursor: pointer;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(img/bod.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+  padding: 50px 0 0 0; 
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  
+  flex: 1;
+  padding: 0 200px;
+  
+}
+
+.header-txt {
+  width: 60%;
+
+}
+.header-txt h1 {
+  font-size: 40px;
+  line-height: 1;
+  color: white;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: "Playfair Display", sans-serif;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.header-txt p {
+  font-size: 20px;
+  color: white;
+  text-align:left ;
+  font-weight: 90;
+  font-family: "Libre Baskerville", sans-serif;
+}
+
+.btn-1 {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+
+  
+
+
 .information {
   padding: 100px 0;
   display: flex;
@@ -179,13 +191,16 @@ th, td {
 }
 
 .b1 {
-  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(img/bod.jpg);
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(img/slider-imagen-principal.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
   padding: 50px 0 0 0; ;
+}
+.b1:hover {
+  transform: scale(1.1);
 }
 
 .b2 {
@@ -195,7 +210,10 @@ th, td {
   background-size: cover;
   display: flex;
   align-items: center;
-  padding: 50px 0 0 0; ;
+  padding: 50px 0 0 0; ; 
+}
+.b2:hover {
+  transform: scale(1.1);
 }
 
 .b3 {
@@ -207,6 +225,9 @@ th, td {
   align-items: center;
   padding: 50px 0 0 0; ;
 }
+.b3:hover {
+  transform: scale(1.1);
+}
 
 .info-txt {
   flex-basis: 50%;
@@ -215,7 +236,7 @@ th, td {
 .info-txt h3 {
   color: white;
   font-size: 20px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Playfair Display", sans-serif;
   text-transform: uppercase;
 }
 
@@ -226,29 +247,97 @@ th, td {
   padding: 3px 6px;
 }
 
-.product {
-  padding: 0 0 50px 0;
+.products {
+  padding: 50px 0;
   text-align: center;
 }
 
 h2 {
   color: black;
-  font-family: "Oswald", sans-serif;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 60px;
+  align-items: center;
+  padding-bottom: 100px;
+}
+.lista-1{
+  transition: .3s;
+}
+.product-content {
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding-bottom: 100px;
+}
+
+.product {
+  text-align: center;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  
+  
+}
+
+.product img {
+  width: 250px;
+  height: 370px;
+  margin-bottom: 20px;
+}
+
+.product h3 {
+  font-size: 30px;
+  color: black;
+  font-family: "Libre Baskerville", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.product p, .precio {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.precio {
+  font-weight: 800;
+}
+
+.btn-2 {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  align-items: center;
+}
+.tips {
+  display: flex ;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+h4 {
+  color: black;
+  font-family: "Playfair Display", sans-serif;
   font-size: 40px;
   align-items: center;
- 
+}
+.tips-1 {
+  flex-basis: calc(23.3% - 30px);
+}
+.tip-1 h5 {
+  color: black;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 20px;
+}
+.tip-1 img {
+  margin-bottom: 20px;
 }
 
-.product-content {
-  margin-top: 55px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, mimax(250px, ifr));
-  gap: 20px;
+.tip-1 p {
+  font-size: 16px;
+  color:black;
+  font-family: "Libre Baskerville", sans-serif;
 }
-
-
-
-
 
 footer {
   background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(img/posible-footer.jpg);
@@ -259,8 +348,175 @@ footer {
   align-items: center;
   min-height: 30vh;
   padding: 50px 0 0 0; 
+  font-family: "Libre Baskerville", sans-serif;
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 12px;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 ;
 }
   
+.socials a img {
+height: 40px;
+display: flex;
+
+}
+.socials a img:hover {
+  color: gray;
+}
+
+
+.socials li {
+  margin: 0 10px;
+}
+
+.footer-bottom {
+  background-color: black;
+  width: 100vw;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.footer-bottom a {
+  font-size: 14px;
+  word-spacing: 2px;
+  font-weight: 200;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+
+
+
+@media (max-width: 991px){
+  
+
+  .menu {
+    padding: 20px;
+  }
+
+  .menu label {
+    display: initial;
+  }
+
+  .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(119, 115, 115, 0.712);
+    display: none;
+  }
+
+  .menu .navbar ul li {
+    width: 100%;
+  }
+
+  .menu .navbar ul li a {
+    color: white;
+  }
+
+  #menu:checked ~ .navbar{
+    display: initial;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .submenu:hover #carrito {
+    min-width: 100%;
+  }
+
+  .header {
+    min-height: 0vh;
+  }
+
+  .header-content {
+    padding: 50px 0;
+    flex-direction: column;
+  }
+
+  .header img {
+    display: none;
+  }
+  .header-txt {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .header-txt h1 {
+    font-size: 70px;
+  }
+
+  .ofert {
+    padding: 30px 30px 0 30px;
+    flex-direction: column;
+  }
+
+  .ofert-1 {
+    margin-bottom: 30px;
+  }
+
+  .products {
+    padding: 0 30px 30px 30px;
+  }
+
+  .products h2 {
+    margin-bottom: 30px;
+  }
+
+  .product-content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+  .product img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .footer {
+    padding: 30px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+
+}
+
+
+
+
+
+
+
 
 
 

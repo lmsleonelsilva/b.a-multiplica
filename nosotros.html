@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saint Victoria | W I N E S</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;1,400;1,500&display=swap');
+
+        /*
+            font-family: "Libre Baskerville", sans-serif;
+            font-family: "Playfair Display", sans-serif;
+        */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body {
+            font-family: "Libre Baskerville", sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            min-height: 80vh;
+            background-color: white;
+            padding: 70px 0;
+        }
+        .menu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-size: 15px;
+            color: black;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+        .menu .navbar ul li{
+            position: relative;
+            float: left;
+            
+        }
+        .menu .navbar ul li a {
+            font-size: 15px;
+            padding: 20PX;
+            color: black;
+            display: block;
+            font-family: "Playfair Display", sans-serif;
+            font-weight: 600;
+        }
+        .menu .navbar ul li a:hover {
+            color: white;
+        }
+        #menu {
+            display: none;
+        }
+        .menu-icono {
+            width: 25px;
+        }
+        .menu label{
+            cursor: pointer;
+            display: none;
+        }
+        .submenu {
+            position: relative;
+        }
+        .submenu #carrito {
+            display: none;
+        }
+        .submenu:hover #carrito {
+            display: block;
+            position: absolute;
+            right: 0;
+            backdrop-filter: blur (50px);
+            top: 100%;
+            z-index: 1;
+            background-color: #33333317;
+            padding: 20px;
+            min-height: 400px;
+        }
+        table {
+            width: 100%;
+        }
+        th, td {
+            color: white;
+        }
+        .borrar {
+            background-color: black;
+            border-radius: 50%;
+            padding: 5px 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: 800;
+            cursor: pointer;
+        }
+        .header {
+            background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(img/para-imagen-slash-o-finca.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            min-height: 80vh;
+            padding: 50px 0 0 0;
+        } 
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex: 1;
+            padding: 0 200px;
+        }
+        .seccion {
+            display: flex;
+            align-items: center;
+            min-height: 80vh;
+            background-color: white;
+            padding: 70px 0;
+            
+        }
+        h2 {
+            color: black;
+            font-family: "Playfair Display", sans-serif;
+            font-size: 80px;
+            text-align: center;
+            align-items: center;
+            text-transform: uppercase;
+            line-height: 3;
+        }
+        .empresa-content p {
+            flex-basis: 90px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            line-height: 2.5;
+            
+        }
+        .main {
+            display: flex;
+            padding-bottom: 100px;
+        }
+
+        .vision-txt  p {
+            flex-basis: 90px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            line-height: 2.5;
+            padding-bottom: 100px;
+            font-family: "Libre Baskerville", sans-serif;
+        
+        }
+        h3 {
+            color: black;
+            font-family: "Playfair Display", sans-serif;
+            font-size: 80px;
+            text-align: center;
+            align-items: center;
+            text-transform: uppercase;
+            line-height: 3;
+        }
+        footer {
+            background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(img/posible-footer.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            min-height: 30vh;
+            padding: 50px 0 0 0; 
+            font-family: "Poppins", sans-serif;
+            color: white;
+        }
+
+        .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .footer-content p {
+            max-width: 500px;
+            margin: 10px auto;
+            line-height: 28px;
+            font-size: 12px;
+        }
+
+        .socials {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0 ;
+        }
+  
+        .socials a img {
+            height: 40px;
+            display: flex;
+        }
+        .socials a img:hover {
+            color: gray;
+        }
+        .socials li {
+            margin: 0 10px;
+        }
+
+        .footer-bottom {
+            background-color: black;
+            width: 100vw;
+            padding: 5px 0;
+            text-align: center;
+        }
+
+        .footer-bottom a {
+            font-size: 14px;
+            word-spacing: 2px;
+            font-weight: 200;
+        }
+
+        .footer-bottom span {
+            text-transform: uppercase;
+            opacity: .4;
+            font-weight: 200;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <img id="logo" src="img/Untitled_design-removebg-preview.png" alt="">
+            
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="img/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="vinos.html">VINOS</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="img/car.svg" id="img-carrito" alt="carito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+            
+    </header>
+
+    <section>
+        <div class="empresa container">
+            <div class="empresa-content">
+                <h2>
+                    Nuestra Empresa
+                </h2>
+                <p>
+                    Somos una Bodega que se proyecta con sus valores de tradición, calidad, prestigio, innovación y contemporaneidad en la vitivinicultura argentina.
+                    Somos parte del patrimonio y la riqueza de nuestra tierra. Somos orgullo, logros y una calidad y excelencia irrenunciables en todos nuestros productos, hoy y mirando al futuro.
+                    Situados en San Rafael, provincia de Mendoza, somos la bodega patrimonio de la Argentina.
+                    Saint Victoria es hoy una marca global con presencia en más de 40 países representando los valores y la calidad del vino argentino en todo el mundo.
+                    El territorio de San Rafael es un hito para Saint Victoria por que marca el inicio, el primer movimiento de nuestra estrategia de marca global. Es el crecimiento natural de nuestra en la búsqueda de nuevos sabores para el mercado local e internacional.
+        
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+    <main>
+        <div class="vision container">
+            <h3> Nuestra Vision</h3>
+            <div class="vision-content">
+                <div class="vision-txt">
+                    <p>
+                        Convertirnos en una de las Bodegas Argentinas más reconocidas como marca global, honrando su identidad familiar y calidad enológica, construyendo su futuro con la pasión y compromiso de sus colaboradores para entregar valor de forma continua a sus consumidores y a todo el ecosistema de la compañía, de manera sustentable e impulsados por la innovación continua 
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <img src="img/logo-saint-victoria-since2022.png" alt="">
+            <p>Gracias por visitarnos, tambien nos podes encontrar en nuestras redes</p>
+            <ul class="socials">
+                <li><a href="https://instagram.com/leosilvactc?igshid=OGQ5ZDc2ODk2ZA=="><img src="img/logo-insta.png" alt="instagram"></a></li>
+                <li><a href="https://www.linkedin.com/in/leonel-marcelo-silva-9392391a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="img/logo-linkedin.png" alt="linkedin"></a></li>
+                
+            </ul>
+            <div class="footer-bottom">
+                <p>copyright &copy;2023 Saint Victoria by <span>leonelmsilva</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
